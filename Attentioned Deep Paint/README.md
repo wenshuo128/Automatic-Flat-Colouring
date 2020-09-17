@@ -23,3 +23,7 @@ Choose a character from DCM dataset and use the style in Anime Sketch Colorizati
 Choose a character from Anime Sketch Colorization Pair dataset and use the style in DCM dataset:
 
 <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/Attentioned%20Deep%20Paint/data/colorize_result/test1style9.png" width="950"/>
+
+<img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/Attentioned%20Deep%20Paint/data/colorize_result/test2style9.png" width="950"/>
+
+<img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/Attentioned%20Deep%20Paint/data/colorize_result/test2style8.png" width="950"/>
