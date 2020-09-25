@@ -95,3 +95,5 @@ Some very simple images do work with the default parameters:
 
 ./gmic ../../Automatic-Flat-Colouring/inputs_for_gmic_colorization/square2.png -fx_colorize_lineart_smart 0,95,1,1,1,24,200,0,75,2,60,20,90,1,10,1 -o square2__colorize_lineart_smart.png
 ```
+
+<img src="inputs_for_gmic_colorization/square2.png"> <img src="inputs_for_gmic_colorization/square2__colorize_lineart_smart_000002.png">
