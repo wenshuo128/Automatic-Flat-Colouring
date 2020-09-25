@@ -74,9 +74,9 @@ gmic sombulus_archive/68.jpeg -fx_autofill_lineart 90,1,12,2  -o[-1] 68__autofil
 
 `fx_colorize_lineart_smart` has around 15 arguments:
 ```
-./gmic ../../Automatic-Flat-Colouring/sombulus_archive/68.jpeg -fx_colorize_lineart_smart 0,95,1,1,0,24,200,0,75,2,60,20,90,1,10,1 -o 68__colorize_lineart_smart.png
+./gmic ../../Automatic-Flat-Colouring/sombulus_archive/68.jpeg -fx_colorize_lineart_smart 0,95,1,1,1,24,200,0,75,2,60,20,90,1,10,1 -o 68__colorize_lineart_smart.png
 ```
-The arguments `0,95,1,1,0,24,200,0,75,2,60,20,90,1,10,1`:
+The arguments `0,95,1,1,1,24,200,0,75,2,60,20,90,1,10,1`:
 * `0` for *Colorize Mode = choice("Generate Random-Colors Layer","Extrapolate Color Spots on Transparent Top Layer", "Auto-Clean Bottom Color Layer")*
 * `95` for *Contour Detection (%) = float(95,0,100)*
 * `1` for *Discard Contour Guides = bool(0)*
@@ -84,3 +84,14 @@ The arguments `0,95,1,1,0,24,200,0,75,2,60,20,90,1,10,1`:
 
 Unfortunately, this combination of parameters/inputs yields an empty output.
 Maybe we can find the proper arguments via experimentation.
+
+
+#### Basic inputs
+
+Some very simple images do work with the default parameters:
+
+```
+./gmic ../../Automatic-Flat-Colouring/inputs_for_gmic_colorization/square.png -fx_colorize_lineart_smart 0,95,1,1,1,24,200,0,75,2,60,20,90,1,10,1 -o square__colorize_lineart_smart.png
+
+./gmic ../../Automatic-Flat-Colouring/inputs_for_gmic_colorization/square2.png -fx_colorize_lineart_smart 0,95,1,1,1,24,200,0,75,2,60,20,90,1,10,1 -o square2__colorize_lineart_smart.png
+```
