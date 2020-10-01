@@ -9,3 +9,9 @@ Combining the image of colored region (img/segment_region.png) with colored imag
 Combining the color map with the sketch, we get the baseline:
 
 <div align=center><img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img/final_result.png" width="499" alt="Original image"/>
+  
+The result seems not good for two possible reasons:
+
+1. The inappropriate parameters of the function fx_colorize_lineart_smart in GMIC lead to a rough segmentation.
+
+2. The sketch has some gray pixels, which make the edges of the picture look like cracks.
