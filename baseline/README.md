@@ -17,4 +17,12 @@ The result seems not good for two possible reasons:
 
 2. The sketch has some gray pixels, which make the edges of the picture look like cracks.
 
-First, we use darken [min(r_{1},r_{2}),min(g_{1},g_{2}),min(b_{1},b_{2})]
+To improve the baseline, we first use darken (min(r1,r2),min(g1,g2),min(b1,b2)) to Combining the color map with the sketch, and get the result:
+
+<div align=center><img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img/final_result_darken.png" width="499" alt="Original image"/>
+  
+<div align=left>
+  
+Also, we use lineart instead of sketch, and get the results as the following (original image, lineart, GMIC result, final result without darken, final result with darken):
+
+<img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-11res100_c.png" width="199" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-11res100_l.png" width="199" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/color_result_1.png" width="199" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/final_result_1.png" width="199" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/final_result_darken_1.png" width="199" alt="Original image"/>
