@@ -23,8 +23,17 @@ To improve the baseline, we first use darken (min(r1,r2),min(g1,g2),min(b1,b2)) 
   
 <div align=left>
   
-Also, we use lineart instead of sketch, and get the results as the following (original image, lineart, GMIC result, final result without darken, final result with darken):
+Also, we use lineart instead of sketch, and get the results as the following (lineart, original image, final result):
 
-<img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-11res100_c.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-11res100_l.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/color_result_1.png" width="333" alt="Original image"/> 
+<img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-11res100_l.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-11res100_c.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/final_result_darken_1.png" width="333" alt="Original image"/> 
 
-<img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/final_result_1.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/final_result_darken_1.png" width="333" alt="Original image"/>
+<img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-12res100_l.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-12res100_c.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/final_result_darken_2.png" width="333" alt="Original image"/> 
+
+<img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-13res100_l.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-13res100_c.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/final_result_darken_3.png" width="333" alt="Original image"/> 
+
+However, there are still some flaws due to the texts in balloons. We try to use median instead of average to select color for each region and get the following result (original image, average, median):
+
+<img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-12res100_c.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/final_result_darken_2.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/final_result_darken_2_median.png" width="333" alt="Original image"/> 
+
+
+
