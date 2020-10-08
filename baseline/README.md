@@ -31,9 +31,17 @@ Also, we use lineart instead of sketch, and get the results as the following (li
 
 <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-13res100_l.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-13res100_c.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/final_result_darken_3.png" width="333" alt="Original image"/> 
 
-However, there are still some flaws due to the texts in balloons. We try to use median instead of average to select color for each region and get the following result (original image, average, median):
+However, there are still two obvious problems:
+
+1. Since we average the color of the original image, the lineart in the original image lower the overall brightness.
+
+2. The texts in balloons make the color weird within the balloons.
+
+We try to use median instead of average to select color for each region and get the following result (original image, average, median):
 
 <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-12res100_c.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/final_result_darken_2.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/final_result_darken_2_median.png" width="333" alt="Original image"/> 
+
+It can be seen that the overall brightness are much closer to the original image, but there are still some flaws.
 
 
 
