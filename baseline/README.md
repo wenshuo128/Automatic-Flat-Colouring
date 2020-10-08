@@ -39,9 +39,13 @@ However, there are still two obvious problems:
 
 We try to use median instead of average to select color for each region and get the following result (original image, average, median):
 
+<img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-11res100_c.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/final_result_darken_1.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/final_result_darken_1_median.png" width="333" alt="Original image"/> 
+
 <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-12res100_c.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/final_result_darken_2.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/final_result_darken_2_median.png" width="333" alt="Original image"/> 
 
-It can be seen that the overall brightness are much closer to the original image, but there are still some flaws.
+<img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-13res100_c.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/final_result_darken_3.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/final_result_darken_3_median.png" width="333" alt="Original image"/> 
+
+It can be seen that the overall brightness are much closer to the original image, but there are still some flaws. The reason might be that GMIC sometimes uses the same color for several different regions.
 
 
 
