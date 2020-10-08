@@ -16,3 +16,5 @@ The result seems not good for two possible reasons:
 1. The inappropriate parameters of the function fx_colorize_lineart_smart in GMIC lead to a rough segmentation.
 
 2. The sketch has some gray pixels, which make the edges of the picture look like cracks.
+
+First, we use darken [min(r_{1},r_{2}),min(g_{1},g_{2}),min(b_{1},b_{2})]
