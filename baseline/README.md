@@ -49,21 +49,30 @@ It can be seen that the overall brightness are much closer to the original image
 
 To fix the problem that GMIC sometimes uses the same color for different unconnected regions, we use function connectedcomponent in opencv to colorize the region one by one, and the results are as the following:
 
-<img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-11res100_c.png" width="480" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/final_result_darken_1_median_connect.png" width="480" alt="Original image"/>
+<img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-11res100_c.png" width="499" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/final_result_darken_1_median_connect.png" width="499" alt="Original image"/>
 
-<img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-12res100_c.png" width="480" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/final_result_darken_2_median_connect.png" width="480" alt="Original image"/>
+<img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-12res100_c.png" width="499" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/final_result_darken_2_median_connect.png" width="499" alt="Original image"/>
 
-<img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-13res100_c.png" width="480" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/final_result_darken_3_median_connect.png" width="480" alt="Original image"/>
+<img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-13res100_c.png" width="499" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/final_result_darken_3_median_connect.png" width="499" alt="Original image"/>
 
 Now, given the lineart and the color map, we can get a almost perfect result. And our task is to get the lineart and the color map.
 
 For getting the lineart, we have several methods in dataprocessing.py. Here we use sauvola threshold in HSV space to get the lineart, and from the following result we can see that the lineart is qualified.
 
-<img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-11res100_c.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/result_with_lineart_detection_1.png.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-11res100_c.png" width="333" alt="Original image"/> 
+<img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-11res100_l_fake.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/result_with_lineart_detection_1.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-11res100_c.png" width="333" alt="Original image"/> 
 
 
-<img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-12res100_c.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/result_with_lineart_detection_2.png.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-12res100_c.png" width="333" alt="Original image"/> 
+<img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-12res100_l_fake.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/result_with_lineart_detection_2.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-12res100_c.png" width="333" alt="Original image"/> 
 
 
-<img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-13res100_c.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/result_with_lineart_detection_3.png.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-13res100_c.png" width="333" alt="Original image"/> 
+<img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-13res100_l_fake.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/result_with_lineart_detection_3.png" width="333" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/7-13res100_c.png" width="333" alt="Original image"/> 
+
+Now what we need is the color transfer network. The results of Attentioned Deep Painting is shown below, which are not good enough.
+
+<img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/fake1.png" width="499" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/fake_result_1.png" width="499" alt="Original image"/>
+
+<img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/fake2.png" width="499" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/fake_result_2.png" width="499" alt="Original image"/>
+
+<img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/fake3.png" width="499" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/fake_result_3.png" width="499" alt="Original image"/>
+
 
