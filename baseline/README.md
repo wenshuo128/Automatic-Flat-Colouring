@@ -73,6 +73,5 @@ Now what we need is the color transfer network. The results of Attentioned Deep 
 
 <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/fake2.png" width="499" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/fake_result_2.png" width="499" alt="Original image"/>
 
-<img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/fake3.png" width="499" alt="Original image"/> <img src="https://github.com/wenshuo128/Automatic-Flat-Colouring/blob/master/baseline/img_sombulus_archive/fake_result_3.png" width="499" alt="Original image"/>
 
 
